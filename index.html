@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DashboardTask</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+
+  <div class="container-fluid">
+    <div class="dashboard-header">
+      <div class="d-flex bd-highlight">
+        <div class="mr-auto p-2 bd-highlight">
+          <h2 class="page-title">Dashboard</h2>
+        </div>
+        <div class="p-2 bd-highlight">
+          <button type="button" class="btn btn-primary btn-md rounded">March'2022 - August'2022</button>
+          <span class="or">Or</span>
+          <!--Blue select-->
+        </div>
+        <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker pl-3" inline="true">
+          <input placeholder="Select date" type="text" id="example" class="form-control">
+          
+          <i class="fas fa-calendar input-prefix"></i>
+        </div>
+        <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker pl-3" inline="true">
+          <input placeholder="Select date" type="text" id="example" class="form-control">
+          
+          <i class="fas fa-calendar input-prefix"></i>
+        </div>
+        <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-primary btn-md rounded">Search</button>
+      </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="ng-star-inserted">
+      <h5 class="pb-3 ng-star-inserted">All Claims Before Submission</h5>
+      <ul class="dashboard-legend mb-3">
+        <li><span class="bg-ready-submission"></span>Ready for Submission</li>
+        <li><span class="bg-rejected-waseel"></span>Validation Errors</li>
+      </ul>
+      <div class="row small-gutter">
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">Number of Claims</p>
+            <h4 class="ng-star-inserted">
+              39 <small>Claims</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel " data-toggle="tooltip" data-placement="bottom"
+                title="39 Claims">
+                39 <small>Claims</small></div>
+
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">Gross Amount </p>
+            <h4 class="ng-star-inserted">
+              6.1k <small>SR</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel">
+                6.1k <small>SR</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">Discount</p>
+            <h4 class="ng-star-inserted">
+              924.5 <small>SR</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel">
+                924.5 <small>SR</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">Patient Share</p>
+            <h4 class="ng-star-inserted">
+              604.63 <small>SR</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel">
+                604.63 <small>SR</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">Net Amount </p>
+            <h4 class="ng-star-inserted">
+              4.5k <small>SR</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel">
+                4.5k <small>SR</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0 mb-0">VAT Amount</p>
+            <h4 class="ng-star-inserted">
+              542.63 <small>SR</small></h4>
+            <div class="progress-block ng-star-inserted">
+              <div class="rejected-waseel-bar bg-rejected-waseel"></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission"> 0 <small>%</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel"> 100 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-ready-submission">
+                0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected-waseel">
+                542.63 <small>SR</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h5 class="pt-3 ng-star-inserted">All Claims After Submission</h5>
+    <div class="ng-star-inserted">
+      <ul class="dashboard-legend mb-3">
+        <li><span class="bg-under-processing"></span>Under Processing</li>
+        <li><span class="bg-paid"></span>Paid</li>
+        <li><span class="bg-partially-paid"></span>Partially Paid</li>
+        <li><span class="bg-rejected"></span>Rejected by Payer</li>
+      </ul>
+
+      <div class="row small-gutter">
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">Number of Claims</p>
+            <h4 class="ng-star-inserted">3.4k
+              <small>Claims</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+
+              <div class="chart-container">
+                <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 969 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 28.49 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 2k <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 58.51 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 442 <small>Claims</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 13.00 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">Gross Amount</p>
+            <h4 class="ng-star-inserted">2723.6k <small>SR</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+              <div class="chart-container">
+                <canvas id="doughnutChart0"></canvas>
+              </div>
+
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 805.8k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 29.58 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 1726.3k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 63.38 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 191.6k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 7.03 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">Discount</p>
+            <h4 class="ng-star-inserted">477.5k <small>SR</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+
+              <div class="chart-container">
+                <canvas id="doughnutChart1"></canvas>
+              </div>
+
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 39.3k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 8.24<small>%</small></div>
+
+
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 398.8k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 83.52 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 39.4k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 8.25 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">Patient Share</p>
+            <h4 class="ng-star-inserted">121.7k
+              <small>SR</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+
+              <div class="chart-container">
+                <canvas id="doughnutChart2"></canvas>
+              </div>
+
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 25.4k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 20.89 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 88.5k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 72.70 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 7.8k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 7.44 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">Net Amount</p>
+            <h4 class="ng-star-inserted">2124.4k
+              <small>SR</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+
+              <div class="chart-container">
+                <canvas id="doughnutChart3"></canvas>
+              </div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 741k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 34.88 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 1239.1k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 58.32 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 144.4k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 6.80 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="col-xl-2 col-4">
+          <div class="dashboard-claim-card rounded">
+            <!---->
+            <!---->
+            <p class="title ng-star-inserted mb-0">VAT Amount</p>
+            <h4 class="ng-star-inserted">104.9k
+              <small>SR</small></h4>
+            <div class="chart-wrapper ng-star-inserted">
+
+              <div class="chart-container">
+                <canvas id="doughnutChart4"></canvas>
+              </div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-under-processing"> 0 <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-under-processing"> 0 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-paid"> 16.8k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-paid"> 16.05 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-partially-paid"> 80.6k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-partially-paid"> 76.78 <small>%</small></div>
+            </div>
+            <div class="statistics d-flex ng-star-inserted">
+              <div class="text-rejected"> 7.5k <small>SR</small></div>
+              <div class="ml-auto pl-2 text-right text-rejected"> 221.06 <small>%</small></div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <h5 class="pb-3 pt-3 ng-star-inserted">Top 5 Rejections</h5>
+
+
+    <div class="ng-star-inserted">
+      <div class="row small-gutter">
+        <div class="col-lg-4 col-md-6">
+
+            <div class="primary-card rounded">
+              <div class="primary-card-title">By Department</div>
+              <div class="primary-card-content">
+                <div class="rejection-card-head">
+                  <div class="left-block">
+                    <h4>Rejected Claims</h4>
+                    <h6>144.4k Claims</h6>
+                  </div>
+                  <div class="right-block">
+                    <div class="chartjs-size-monitor">
+                      <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                      </div>
+                      <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                      </div>
+                    </div>
+
+                    <canvas id="RejectionsChart" style=" width: 150px; height: 70px;" width="150" height="70"></canvas>
+
+                  </div>
+                </div>
+                <!---->
+                <!---->
+                <ul class="item-list">
+                  <!---->
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(248, 73, 82);"></div>
+                    <div>Cardiology</div>
+                    <div class="ml-auto pl-2 text-right">18 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(249, 144, 83);"></div>
+                    <div>Paediatrics</div>
+                    <div class="ml-auto pl-2 text-right">50 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(249, 213, 83);"></div>
+                    <div>Opthalmic</div>
+                    <div class="ml-auto pl-2 text-right">62 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(216, 249, 83);"></div>
+                    <div>Urology</div>
+                    <div class="ml-auto pl-2 text-right">22 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(146, 249, 83);"></div>
+                    <div>Neurology</div>
+                    <div class="ml-auto pl-2 text-right">23 <small>Claims</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+
+            <div class="primary-card rounded">
+              <div class="primary-card-title">By Doctor</div>
+              <div class="primary-card-content">
+                <div class="rejection-card-head">
+                  <div class="left-block">
+                    <h4>Rejected Claims</h4>
+                    <h6>144.4k Claims</h6>
+                  </div>
+                  <div class="right-block">
+                    <div class="chartjs-size-monitor">
+                      <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                      </div>
+                      <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                      </div>
+                    </div>
+                    <canvas id="RejectionsChart0" style=" width: 150px; height: 70px;" width="150" height="70"></canvas>
+                  </div>
+                </div>
+                <!---->
+                <!---->
+                <ul class="item-list">
+                  <!---->
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(254, 37, 84);"></div>
+                    <div>Najib El Atrach</div>
+                    <div class="ml-auto pl-2 text-right">9 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(254, 113, 77);"></div>
+                    <div>Alsayed Ibrahim Alsayad Hamad</div>
+                    <div class="ml-auto pl-2 text-right">25 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(254, 186, 77);"></div>
+                    <div>Ahmed Badar Mohammed</div>
+                    <div class="ml-auto pl-2 text-right">5 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(248, 254, 77);"></div>
+                    <div>Ibrahim Abd Elmagid Saber</div>
+                    <div class="ml-auto pl-2 text-right">14 <small>Claims</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(175, 254, 77);"></div>
+                    <div>Fahad Neshshmy Salem Alshemmry</div>
+                    <div class="ml-auto pl-2 text-right">14 <small>Claims</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+
+            <div class="primary-card rounded">
+              <div class="primary-card-title">By Service</div>
+              <div class="primary-card-content">
+                <div class="rejection-card-head">
+                  <div class="left-block">
+                    <h4>Rejected Services</h4>
+                    <h6>5.4k Services</h6>
+                  </div>
+                  <div class="right-block">
+                    <div class="chartjs-size-monitor">
+                      <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                      </div>
+                      <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                      </div>
+                    </div>
+                    <canvas id="RejectionsChart1" style=" width: 150px; height: 70px;" width="150" height="70"></canvas>
+                  </div>
+                </div>
+                <!---->
+                <!---->
+                <ul class="item-list">
+                  <!---->
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(184, 171, 25);"></div>
+                    <div>AIR MATRESS/ DAY</div>
+                    <div class="ml-auto pl-2 text-right">2 <small>Services</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(171, 228, 58);"></div>
+                    <div>EUTHYROX (LEVOTHYROxine)50 MCG 100 TABLET</div>
+                    <div class="ml-auto pl-2 text-right">7 <small>Services</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(132, 234, 98);"></div>
+                    <div>SODIUM CHLORIDE 0.9% 10ML AMP (PSI) B/70</div>
+                    <div class="ml-auto pl-2 text-right">61 <small>Services</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(98, 234, 121);"></div>
+                    <div>Paracetamol B. Braun 1000mg/100ml IVI</div>
+                    <div class="ml-auto pl-2 text-right">45 <small>Services</small>
+                    </div>
+                  </li>
+                  <li class="ng-star-inserted">
+                    <div class="status-dot size-lg" style="background-color: rgb(98, 234, 177);"></div>
+                    <div>POTASSIUM CHLORIDE 15% 10 ML VIAL</div>
+                    <div class="ml-auto pl-2 text-right">6 <small>Services</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script>
+
+
+  </script>
+</body>
+
+</html>
