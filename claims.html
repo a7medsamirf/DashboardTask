@@ -479,46 +479,289 @@
                               <li class="nav-item">
                                 <a class="nav-link" id="Attachments-tab-classic" data-toggle="tab" href="#Attachments-classic" role="tab" aria-controls="Attachments-classic" aria-selected="false">Attachments</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="Results-tab-classic" data-toggle="tab" href="#Results-classic" role="tab" aria-controls="Results-classic" aria-selected="false">LAB Results</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="Invoices-tab-classic" data-toggle="tab" href="#Invoices-classic" role="tab" aria-controls="Invoices-classic" aria-selected="false">Invoices & Services</a>
+                              </li>
+
                             </ul>
                             <div class="tab-content border-right border-bottom border-left rounded-bottom" id="myClassicTabContent">
                               <div class="tab-pane fade active show" id="Information-classic" role="tabpanel" aria-labelledby="Information-tab-classic">
-                                <div class="row small-gutter general-info-wrapper">
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label class="control-label">Full Name<span class="asterisk">*</span></label>
-                                            <div class="row extra-small-gutter">
-                                                <div class="col">
-                                                    <input class="form-control ng-untouched ng-pristine" placeholder="Enter full name" required=""
-                                                        type="text" disabled="">
+                                <div class="small-gutter general-info-wrapper">
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="control-label">Full Name<span class="asterisk">*</span></label>
+                                                <div class="row extra-small-gutter">
+                                                    <div class="col">
+                                                        <input class="form-control ng-untouched ng-pristine" placeholder="Enter full name" required=""
+                                                            type="text" disabled="">
+                                                        </div>
+                                                    
+    
+                                                    <div class="col-auto form-group mb-0">
+                                                        <select class="browser-default custom-select" disabled>
+                                                            <option selected>Female</option>
+                                                            <option value="1">Male</option>
+                                                            <option value="2">Female</option>
+                                                          </select>
                                                     </div>
-                                                
-
-                                                <div class="col-auto form-group mb-0">
-                                                    <select class="browser-default custom-select">
-                                                        <option selected>Female</option>
-                                                        <option value="1">Male</option>
-                                                        <option value="2">Female</option>
-                                                      </select>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label class="control-label">Department<span class="asterisk">*</span></label>
-                                            <select class="browser-default custom-select">
-                                                <option selected>Gynecology</option>
-                                              </select>
-                                   
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="control-label">Department<span class="asterisk">*</span></label>
+                                                <select class="browser-default custom-select" disabled>
+                                                    <option selected>Gynecology</option>
+                                                  </select>
+                                       
+                                            </div>
                                         </div>
+                    
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="control-label">Department<span class="asterisk">*</span></label>
+                                                <select class="browser-default custom-select" disabled>
+                                                    <option selected>Tawuniya</option>
+                                                    <option value="1">Tawuniya</option>
+                                                    <option value="2">Tawuniya</option>
+                                                  </select>
+                                       
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="control-label">Claim Date<span class="asterisk">*</span></label>
+                                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker m-0" inline="true">
+                                                <input placeholder="Claim Date" type="text" id="example" class="form-control" disabled>
+                                                
+                                                <i class="fas fa-calendar input-prefix"></i>
+                                              </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="control-label">Nationality</label>
+                                                <select class="browser-default custom-select" disabled>
+                                                    <option selected>Tawuniya</option>
+                                                    <option value="1">Tawuniya</option>
+                                                    <option value="2">Tawuniya</option>
+                                                  </select>
+                                       
+                                            </div>
+                                        </div>
+    
                                     </div>
-                                </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">National / Iqama ID<span class="asterisk">*</span></label>
+                                                            <input class="form-control ng-untouched ng-pristine" placeholder="National / Iqama ID" required=""
+                                                                type="text" disabled="">
+                                      
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Member ID<span class="asterisk">*</span></label>
+                                                            <input class="form-control ng-untouched ng-pristine" placeholder="Member ID" required=""
+                                                                type="text" disabled="">
+                                      
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Policy No.</label>
+                                                            <input class="form-control ng-untouched ng-pristine" placeholder="Policy No." required=""
+                                                                type="text" disabled="">
+                                      
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date of Birth</label>
+                                                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker m-0" inline="true">
+                                                    <input placeholder="Date of Birth" type="text" id="example" class="form-control" disabled>
+                                                    
+                                                    <i class="fas fa-calendar input-prefix"></i>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Age<span class="asterisk">*</span></label>
+                                                    <div class="row extra-small-gutter">
+                                                        <div class="col">
+                                                            <input class="form-control ng-untouched ng-pristine" placeholder="Age" required=""
+                                                                type="number" disabled="">
+                                                            </div>
+                                                        
+        
+                                                        <div class="col-auto form-group mb-0">
+                                                            <select class="browser-default custom-select" disabled>
+                                                                <option selected>Year</option>
+                                                                <option value="1">Day</option>
+                                                              </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                           <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="control-label">Eligibility Number</label>
+                                    <input class="form-control ng-untouched ng-pristine"
+                                        placeholder="Enter eligibility number" type="text" disabled=""></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="control-label">Approval No.
+                                        <!----></label><input class="form-control ng-untouched ng-pristine" placeholder="Enter approval number"
+                                        required="" type="text" disabled=""></div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="control-label">Physician Category
+                                      </label>
+                                        <select class="browser-default custom-select" disabled>
+                                            <option selected>Consultant</option>
+                                            <option value="1">Consultant</option>
+                                          </select>
+                            </div>
+                           </div>
+
+                           <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Physician Name
+                                    <!----><span class="asterisk ng-star-inserted">*</span></label><input
+                                    class="form-control ng-untouched ng-pristine" placeholder="Enter physician name" type="text" disabled=""
+                                    required=""></div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="control-label">Physician ID
+                                    <!----><span class="asterisk ng-star-inserted">*</span></label><input
+                                    class="form-control ng-untouched ng-pristine" placeholder="Enter physician ID" type="text" disabled=""
+                                    required=""></div>
+                        </div>
+                     
 
 
 
                                 
-                                
+                                </div> 
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Account Code</label><input class="form-control ng-untouched ng-pristine"
+                                                        placeholder="Enter account code" required="" type="text" disabled=""></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Duration of Illness
+                                                        <!----><span class="asterisk ng-star-inserted">*</span></label>
+                                                    <div class="row extra-small-gutter">
+                                                        <div class="col">
+                                                            <input class="form-control ng-untouched ng-pristine"
+                                                                placeholder="Enter duration of illness" type="number" disabled=""></div>
+                                                        <div class="col-auto">
+                                                            <select class="browser-default custom-select" disabled>
+                                                                <option selected>Day</option>
+                                                              </select>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Visit Type<span class="asterisk">*</span></label>
+                                                    <select class="browser-default custom-select" disabled>
+                                                        <option selected>New</option>
+                                             
+                                                      </select>
+                                           
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Patient File Number<span class="asterisk">*</span></label><input
+                                                        class="form-control ng-untouched ng-pristine" id="fileNumberInput"
+                                                        placeholder="Enter patient file number" type="text" disabled=""></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="control-label">Contact Number</label><input class="form-control ng-untouched ng-pristine"
+                                                        id="contactNumberInput" placeholder="Enter contact number" type="text" disabled=""></div>
+                                            </div>
+
+                                        </div> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Chief Complaint Symptoms
+                                                            <!----><span class="asterisk ng-star-inserted">*</span></label><textarea
+                                                            class="form-control ng-untouched ng-pristine" placeholder="Enter chief complaint symptoms" rows="2"
+                                                            disabled=""></textarea></div>
+                                                </div>
+                                                <div class="col ng-star-inserted">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Claim Type</label>
+                                                        <select class="browser-default custom-select" disabled>
+                                                            <option selected>Inpatient</option>
+                                                 
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col ng-star-inserted">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Other Condition</label><input class="form-control ng-untouched ng-pristine"
+                                                            placeholder="Enter other condition" disabled=""></div>
+                                                </div>
+                                                    <!---->
+    <div class="col ng-star-inserted">
+        <div class="form-group"><label class="control-label">Radiology Report</label><textarea
+                class="form-control ng-untouched ng-pristine" placeholder="Enter radiology report" rows="2"
+                disabled=""></textarea></div>
+    </div>
+    
+    <!---->
+    <div class="col ng-star-inserted">
+        <div class="form-group">
+            <label class="control-label">Plan Type</label><input class="form-control ng-untouched ng-pristine"
+                placeholder="Enter plan type" type="text" disabled=""></div>
+    </div>
+                                            </div>
+                                    <div class="row">
+    <!---->
+   <div class="col-lg-3 ng-star-inserted" style="max-width: 20%;flex: 0 0 20%;">
+        <div class="form-group"><label class="control-label">Comment Report</label><input
+                class="form-control ng-untouched ng-pristine" placeholder="Enter comment report" disabled=""></div>
+    </div>
+    <!---->
+   <div class="col-lg-3 ng-star-inserted" style="max-width: 20%;flex: 0 0 20%;">
+        <div class="form-group">
+            <label class="control-label">Significant Sign</label><textarea class="form-control ng-untouched ng-pristine"
+                placeholder="Enter significant sign" rows="2" disabled=""></textarea></div>
+    </div>
+                                    </div>
+
+
+
+
                               </div>
+                            </div>
                               <div class="tab-pane fade" id="Diagnosis-classic" role="tabpanel" aria-labelledby="Diagnosis-tab-classic">
                                 <p>
                                     <table class="table ">
@@ -661,7 +904,12 @@
                                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                   mollit anim id est laborum.</p>
                               </div>
-
+                              <div class="tab-pane fade" id="Results-classic" role="tabpanel" aria-labelledby="Results-tab-classic">
+                                <p>Results</p>
+                              </div>
+                              <div class="tab-pane fade" id="Invoices-classic" role="tabpanel" aria-labelledby="Invoices-tab-classic">
+                                <p>Invoices</p>
+                              </div>
                             </div>
                       
                           </div>

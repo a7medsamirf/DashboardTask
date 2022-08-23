@@ -23,7 +23,9 @@ h5 {
 tr {
     cursor: pointer;
 }
-
+.asterisk, .error-text {
+    color: #d03131;
+}
 .form-control {
     border: 1px solid #d3e0f5 !important;
     height: 40px !important;
