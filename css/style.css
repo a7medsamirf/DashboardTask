@@ -596,3 +596,13 @@ ul {
     flex-grow: 0;
     flex-shrink: 0
 }
+
+.accordian-box {
+    padding: 14px;
+    border: 1px solid #bebebe;
+    border-radius: 8px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
